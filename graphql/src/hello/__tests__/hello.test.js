@@ -1,5 +1,5 @@
 const { path } = require('ramda')
-const { startTestSystem, stopTestSystem, request } = require('../utils/testUtils')
+const { startTestSystem, stopTestSystem, request } = require('../../utils/testUtils')
 
 describe('hello', () => {
   beforeAll(async () => {

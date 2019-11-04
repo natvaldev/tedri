@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec \"node -r dotenv/config\" src/index.js",
-    "test": "jest -i --silent"
+    "test": "jest -i --silent",
+    "clean": "node src/__tests__/clean.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,7 +21,7 @@
     "ramda": "^0.26.1"
   },
   "jest": {
-    "testRegex": "(/src/.*spec)\\.(js?)$",
+    "testRegex": "(/src/.*test)\\.(js?)$",
     "testEnvironment": "node"
   },
   "devDependencies": {
