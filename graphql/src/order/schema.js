@@ -13,12 +13,12 @@ enum Topping{
 
 type Pizza {
   size: [Size!]
-  toppings: [Topping!]
+  toppings: [Topping]
 }
 
 input PizzaInput {
   size: Size!
-  toppings: Topping!
+  toppings: [Topping]
 }
 
 type Order {
